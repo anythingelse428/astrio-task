@@ -35,7 +35,7 @@ export const actions = {
     try {
       await commit('SET_BRANDS_LIST', brands)
     } catch (err) {
-      throw new Error('Внутреняя ошибка сервера, сообщите администратору')
+      throw new Error('Не удалось получить бренды')
     }
   },
   async getCurrentBrand ({ commit }, { route }) {

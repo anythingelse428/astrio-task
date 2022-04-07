@@ -1,7 +1,7 @@
 <template>
   <div class="productCard">
     <div class="productCard__img ratio ratio-1x1">
-      <img v-lazy="CARD_IMAGE" alt="">
+      <img v-lazy="require(`~/assets${image}`)" alt="">
     </div>
     <div class="productCard__footer">
       <div class="info productCard__information">
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import API from '../store/Api'
 import CartAddButton from './CartAddButton.vue'
 export default {
   components: { CartAddButton },
@@ -51,11 +50,6 @@ export default {
       default: '@/assets/blank.jpg'
     },
     brandTitle: { type: String, required: true }
-  },
-  computed: {
-    CARD_IMAGE () {
-      return API.validCardImage(this.image)
-    }
   }
 }
 </script>
@@ -67,10 +61,15 @@ export default {
   margin: 0.5em 0.3em;
   flex-direction: row;
   flex-wrap: wrap;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.2em;
+  padding: 0.5em;
 }
 
 .productCard__footer {
   width: 99%;
+  border-top: 2px solid #d7d7d7;
+  padding: .4em 0;
   display: flex;
   justify-content: center;
   align-items: center;

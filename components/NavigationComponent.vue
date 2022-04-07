@@ -35,7 +35,7 @@ export default {
 .navigation {
   display: flex;
   width: 100%;
-  background: #e59c48;
+  background: #faae31;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -46,7 +46,7 @@ export default {
 }
 .navigation__link {
   text-decoration: none;
-  color: #2b2b2b;
+  color: #313131;
   cursor: pointer;
 }
 .cart {
