@@ -64,19 +64,18 @@ export default {
   .brands {
     width: 100%;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
   }
   .brand {
     cursor: pointer;
     font-size: 1.2em;
-    width: 25%;
-    margin: 0.5em;
+    width: max-content;
+    margin: 0.1em 0.4em;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (min-width: 481px) {
   .brands {
     justify-content: center;
   }
