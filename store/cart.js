@@ -20,10 +20,10 @@ export const mutations = {
   }
 }
 export const actions = {
-  async addProduct ({ commit }, data) {
-    await commit('ADD_PRODUCT', data)
+  addProduct ({ commit }, data) {
+    commit('ADD_PRODUCT', data)
   },
-  async removeProduct ({ commit }, productId) {
-    await commit('REMOVE_PRODUCT', productId)
+  removeProduct ({ commit }, productId) {
+    commit('REMOVE_PRODUCT', productId)
   }
 }
