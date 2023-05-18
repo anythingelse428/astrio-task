@@ -1,0 +1,156 @@
+[
+  {
+    "type": "configurable",
+    "id": 2,
+    "sku": "c1",
+    "title": "Product 2",
+    "regular_price": {
+      "currency": "USD",
+      "value": 54.21
+    },
+    "image": "/images/conf/default.png",
+    "configurable_options": [
+      {
+        "attribute_id": 93,
+        "attribute_code": "color",
+        "label": "Color",
+        "values": [
+          {
+            "label": "Red",
+            "value_index": 931,
+            "value": "#ff0000"
+          },
+          {
+            "label": "Blue",
+            "value_index": 932,
+            "value": "#0000ff"
+          }
+        ]
+      },
+      {
+        "attribute_code": "size",
+        "attribute_id": 144,
+        "position": 0,
+        "id": 2,
+        "label": "Size",
+        "values": [
+          {
+            "label": "M",
+            "value_index": 1441,
+            "value": 1
+          },
+          {
+            "label": "L",
+            "value_index": 1442,
+            "value": 2
+          }
+        ]
+      },
+      {
+        "attribute_code": "grad",
+        "attribute_id": 147,
+        "id": 3,
+        "label": "Gradient",
+        "values": [
+          {
+            "label": "LOW-TOP",
+            "value_index": 2141,
+            "value": 1
+          },
+          {
+            "label": "HIGH-TOP",
+            "value_index": 2142,
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "attributes": [
+          {
+            "code": "color",
+            "value_index": 931
+          },
+          {
+            "code": "size",
+            "value_index": 1442
+          },
+          {
+            "code": "grad",
+            "value_index": 2141
+          }
+        ],
+        "product": {
+          "id": 2002,
+          "sku": "c1-red-l",
+          "image": "/images/conf/red.png"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "code": "color",
+            "value_index": 932
+          },
+          {
+            "code": "size",
+            "value_index": 1441
+          },
+          {
+            "code": "grad",
+            "value_index": 2141
+          }
+        ],
+        "product": {
+          "id": 2002,
+          "sku": "c1-red-l23",
+          "image": "/images/conf/blue.png"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "code": "color",
+            "value_index": 932
+          },
+          {
+            "code": "size",
+            "value_index": 1441
+          },
+          {
+            "code": "grad",
+            "value_index": 2142
+          }
+        ],
+        "product": {
+          "id": 2003,
+          "sku": "c1-blue-m",
+          "image": "/images/conf/blue.png"
+        }
+      },
+      {
+        "attributes": [
+          {
+            "code": "color",
+            "value_index": 931
+          },
+          {
+            "code": "size",
+            "value_index": 1441
+          },
+          {
+            "code": "grad",
+            "value_index": 2142
+          }
+        ],
+        "product": {
+          "id": 2004,
+          "sku": "c1-blue-m",
+          "image": "/images/conf/red.png"
+        }
+      }
+    ],
+    "brand": 1
+  }
+]
